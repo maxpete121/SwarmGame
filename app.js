@@ -102,6 +102,8 @@ function drawPeople() {
         locationElm.innerText = peoplePicture.join(' ')
 
     })
+    movePeople()
+
     
 }
 
@@ -116,7 +118,7 @@ function murder(currentSite) {
         gameCounter--
         document.getElementById("timer").innerText = gameCounter
 drawPeople()
-movePeople()
+
 winGame() 
 }
 
